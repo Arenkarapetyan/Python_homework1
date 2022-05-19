@@ -21,6 +21,7 @@ letter = input()
 
 number = int(number)
 
+
 commandMultiply = letter * number
 
 print(commandMultiply)
