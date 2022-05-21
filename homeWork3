@@ -1,0 +1,54 @@
+"""
+Home Work 1
+
+1․Write a Python program to find those numbers which are divisible by 7 and multiple of 5, between 1500 and 2700 (both included).
+
+"""
+for i in range (1500, 2701):
+    if i % 5 == 0 and i % 7 == 0:
+        print(i)
+"""
+Home Work 2
+
+2․ Write a Python program to convert temperatures to and from celsius, fahrenheit.
+[ Formula : c/5 = f-32/9 [ where c = temperature in celsius and f = temperature in fahrenheit ]
+Expected Output :
+60°C is 140 in Fahrenheit
+45°F is 7 in Celsius
+
+Sample Output:
+Input the temperature you like to convert? (e.g., 45F, 102C etc.) : 104f
+The temperature in Celsius is 40 degrees 
+
+"""
+score = input('Input celsius or fahrenheit,for example (60C) or (60F) ')
+letter = score[-1]
+a = int(score[:-1])
+if letter == 'C':
+        print((a * 9 / 5) + 32)
+elif letter == 'F':
+        print((a - 32) * 5 / 9)
+else:
+        print("Incorrect input")
+
+"""
+Home Work 3
+
+3․ Write a Python program to calculate a dog's age in dog's years.
+Note: For the first two years, a dog year is equal to 10.5 human years. After that, each dog year equals 4 human years.
+Expected Output:
+Input a dog's age in human years: 15
+The dog's age in dog's years is 73 
+
+"""
+
+ega = int(input("Input a dog's age in human years: "))
+
+if ega > 0 and ega <= 2 :
+    print(ega * 10.5)
+elif ega > 2 :
+    print("The dog's age in dog's years is ", ((ega - 2)*4) +21)
+else:
+    print("Incorrect input")
+
+
