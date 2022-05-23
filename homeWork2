@@ -1,0 +1,28 @@
+import sys
+
+#Home Work 1
+print("Number of arguments: ", len(sys.argv))
+
+#home Work 2 
+print("The arguments are: ", sys.argv)
+
+#home Work 3
+var = sys.argv
+out = ''.join(var[1:])
+print(out)
+
+#Home work 4 
+
+print('Enter number:')
+number  = input()
+
+print ('Enter letter')
+letter = input()
+
+number = int(number)
+
+commandMultiply = letter * number
+
+print(commandMultiply)
+
+
